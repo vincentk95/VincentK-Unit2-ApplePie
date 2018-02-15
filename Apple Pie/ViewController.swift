@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var treeImageView: UIImageView!
+    
+    @IBOutlet weak var correctWordLabel: UILabel!
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet var letterButtons: [UIButton]!
+    
     var listOfWords = ["tree", "hyphen", "australia", "kangaroo", "koala", "capsicum", "microwave"]
     
     let incorrectMovesAllowed = 7
@@ -39,7 +46,7 @@ class ViewController: UIViewController {
     func updateUI() {
         var letters = [String]()
         
-        for letter in currentGame.formattedWord.characters {
+        for letter in currentGame.formattedWord {
             letters.append(String(letter))
         }
         
@@ -77,13 +84,6 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak var treeImageView: UIImageView!
-    
-    @IBOutlet weak var correctWordLabel: UILabel!
-    
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet var letterButtons: [UIButton]!
-    
     @IBAction func buttonPressed(_ sender: UIButton) {
         sender.isEnabled = false
         let letterString = sender.title(for: .normal)!
