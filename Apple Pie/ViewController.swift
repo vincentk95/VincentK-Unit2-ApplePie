@@ -59,7 +59,10 @@ class ViewController: UIViewController {
     
     func newRound() {
         if !listOfWords.isEmpty {
-            let newWord = listOfWords.removeFirst()
+            let randIndex = Int(arc4random_uniform(UInt32(listOfWords.count)))
+            let newWord = listOfWords[randIndex]
+            listOfWords.remove(at: randIndex)
+            //let newWord = listOfWords.removeFirst()
             currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
             enableLetterButtons(true)
             updateUI()
