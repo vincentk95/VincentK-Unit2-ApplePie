@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3D3B2D2035DA730061C5A2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D3B2C2035DA730061C5A2 /* Game.swift */; };
 		BFE9B0412035CDFF00E7122D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9B0402035CDFF00E7122D /* AppDelegate.swift */; };
 		BFE9B0432035CDFF00E7122D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9B0422035CDFF00E7122D /* ViewController.swift */; };
 		BFE9B0462035CDFF00E7122D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE9B0442035CDFF00E7122D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF3D3B2C2035DA730061C5A2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		BFE9B03D2035CDFF00E7122D /* Apple Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9B0402035CDFF00E7122D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE9B0422035CDFF00E7122D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				BFE9B0402035CDFF00E7122D /* AppDelegate.swift */,
 				BFE9B0422035CDFF00E7122D /* ViewController.swift */,
 				BFE9B0442035CDFF00E7122D /* Main.storyboard */,
+				BF3D3B2C2035DA730061C5A2 /* Game.swift */,
 				BFE9B0472035CDFF00E7122D /* Assets.xcassets */,
 				BFE9B0492035CDFF00E7122D /* LaunchScreen.storyboard */,
 				BFE9B04C2035CDFF00E7122D /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE9B0432035CDFF00E7122D /* ViewController.swift in Sources */,
+				BF3D3B2D2035DA730061C5A2 /* Game.swift in Sources */,
 				BFE9B0412035CDFF00E7122D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.Apple-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -446,7 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.Apple-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
